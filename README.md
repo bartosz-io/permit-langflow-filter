@@ -24,6 +24,19 @@
     3. Check if the collection is populated with vectors
 6. Install Permit with `pip install` component
     - make sure the installation succeeds by verifing output `Installation status`
-7. Run the chat flow by either:
+
+7. Run the Permit Policy Decision Point (PDP) locally:
+
+    ```bash
+    docker run -p 7766:7000 --env PDP_API_KEY=<YOUR_KEY> --env PDP_DEBUG=true permitio/pdp-v2:latest
+    ```
+
+8. Use `ngrok` to create a tunnel from `http://localhost:7766` to an external endpoint provided by `ngrok`:
+
+    ```bash
+    ngrok http http://localhost:7766
+    ```
+
+9. Run the chat flow by either:
     1. Opening the Playground (bottom right corner)
     2. Clicking the Play icon button on the **last** component
