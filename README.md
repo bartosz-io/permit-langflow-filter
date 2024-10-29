@@ -40,3 +40,9 @@
 9. Run the chat flow by either:
     1. Opening the Playground (bottom right corner)
     2. Clicking the Play icon button on the **last** component
+
+10. Example queries:
+
+    ![image](./chat1.png)
+    
+    ![image](./chat2.png)
